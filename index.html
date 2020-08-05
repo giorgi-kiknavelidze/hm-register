@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>რეგისტრაცია</title>
+	<style type="text/css">
+		.centered-margin {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		body {
+			background-color: #111111;
+			color: #0070FF;
+		}
+		input, textarea {
+			background-color: #0070FF;
+			color: #FFFFFF;
+			border-radius: 5px;
+			border-color: #0070FF;
+			width: 100%;
+		}
+		fieldset {
+			border-color: #0070FF;
+		}
+	</style>
+</head>
+<body>
+	<fieldset>
+		<legend style="text-align: center; font-size: 2em;">სარეგისტრაციო ფორმა</legend>
+		<form class="centered-margin">
+			<table class="centered-margin" style="line-height: 2; text-align:center;">
+				<tr>
+					<td>
+						<label for="FName">სახელი:</label><br>
+						<input type="text" id="FName" name="FName">
+					</td>
+				<tr>
+					<td>
+						<label for="LName">გვარი:</label><br>
+						<input type="text" id="LName" name="LName">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Phone">ტელეფონი:</label><br>
+						<input type="tel" id="Phone" name="Phone" pattern="5[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Mail">ელ-ფოსტა:</label><br>
+						<input type="email" id="Mail" name="Mail" pattern=".@.">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Password">პაროლი:</label><br>
+						<input type="password" id="Password", name="Password">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Address">მისამართი:</label><br>
+						<input type="text" id="Address" name="Address">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="Biography">ბიოგრაფია</label><br>
+						<textarea id="Biography" name="Biography" cols="30" rows="10"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="რეგისტრაცია">
+					</td>
+				</tr>
+		</table>
+	</form>
+	</fieldset>
+	</body>
+</html>
+
